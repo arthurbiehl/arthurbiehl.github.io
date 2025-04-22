@@ -1,0 +1,980 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans';
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: #969696;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_header {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_header .links_header {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_header .links_header a {
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+
+/* Main COVER */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+@keyframes entrarDaEsquerda {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  main > * {
+    animation: entrarDaEsquerda 0.5s ease-out forwards;
+    opacity: 0; /* garante que o item está invisível antes da animação */
+  }
+  
+
+.container_main {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_main .main_img {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_main .main_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main_about {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.main_about h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+}
+
+.main_about p {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+}
+
+.main_btn {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.main_btn .work {
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #352EE0;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.main_btn .work:hover {
+    background-color: #282596;
+}
+
+.main_btn .git {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(131, 131, 131);
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(82, 82, 82);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.main_btn .git:hover {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: 1px solid rgb(49, 49, 49);
+}
+
+
+
+
+
+
+/* Main About */
+
+.container_main_dois {
+    width: 1200px;
+    height: 230px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    background-color: #282596;
+    border-radius: 10px;
+}
+
+.main_about_dois {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    gap: 10px;
+}
+
+.main_about_dois h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(233, 233, 233);
+}
+
+.main_about_dois h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.main_about_dois p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(221, 221, 221);
+}
+
+.main_about_img_dois {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 70px;
+    color: white;
+}
+
+
+
+
+
+
+/* Habilidades */
+
+.container_habilidades {
+    width: 1200px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habilidades_text {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.habilidades_text h2 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #393939;
+}
+
+.habilidades {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card_habilidade {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(206, 206, 206, 0.418);
+    border-radius: 10px;
+}
+
+.card_habilidade img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.card_habilidade:hover img {
+    filter: grayscale(0%);
+}
+
+
+
+
+
+
+
+/* Admin */
+
+.container_admin {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin_text {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.admin_text h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #393939;
+    font-weight: 400;
+}
+
+.admin_text p {
+    font-size: 15px;
+    width: 90%;
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+}
+
+.topicos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_topicos {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    padding: 10px;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.5s;
+    box-shadow: 0px 0px 4px rgba(44, 44, 44, 0.25);
+}
+
+.card_topicos:hover {
+    width: 310px;
+}
+
+.card_topicos p {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+}
+
+.card_topicos i {
+    color: green;
+}
+
+.container_admin_img {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.container_admin_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.container_admin_img .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, white, rgb(137, 137, 137), rgba(0, 0, 0, 0));
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+/* Projetos*/
+
+.container_projetos {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projetos_text {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.projetos_text h2 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #393939;
+}
+
+.projetos_text p {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+}
+
+.projetos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.card_projetos {
+    position: relative;
+    width: 280px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+}
+
+.card_projetos img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.card_projetos a {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card_projetos a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+/* Contato */
+
+.container_contato {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato_text {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.contato_text h2 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #393939;
+}
+
+.contato_text p {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+}
+
+.contatos {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.contatos_card {
+    width: 580px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #282596;
+    border-radius: 10px;
+}
+
+.contatos_card h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.contatos_icones {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.contatos_tipos {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.card_contatos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 4px;
+}
+
+.card_contatos h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #212121;
+}
+.card_contatos p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.card_contatos a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    text-decoration: none;
+}
+
+.card_contatos i {
+    font-size: 11px;
+}
+
+.card_contatos a:hover {
+    text-decoration: underline;
+}
+
+/* obrigado */
+
+.container_obrigado {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.obrigado_text {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.obrigado_text h2 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #202020;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.animate-carousel {
+    display: flex;
+    gap: 20px;
+    animation: carousel 10s linear infinite;
+    width: max-content;
+}
+
+.animate-carousel img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+
+.container_footer {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_text {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+}
+
+.links_footer {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links_footer h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.links_footer a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+    text-decoration: none;
+}
+
+.links_footer a:hover {
+    text-decoration: underline;
+}
+
+.linha_footer {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(35, 35, 35);
+    margin-top: 20px;
+}
+
+.links_footer svg {
+    width: 25px;
+    height: 25px;
+}
+
+.feito_por {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.feito_por p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+}
+
+@media (max-width: 420px) {
+    header {
+        width: 100%;
+    }
+
+    .container_header {
+        width: 90%;
+    }
+
+    .container_header h2 {
+        width: 30%;
+        font-size: 20px;
+    }
+    
+    .container_header .links_header {
+        width: 60%;
+        gap: 15px;
+    }
+
+
+    /*MAIN 1*/
+
+    .container_main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main_about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main_about h1 {
+        font-size: 28px;
+    }
+
+    .main_about p {
+        font-size: 28px;
+
+    }
+
+    .main_btn {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .main_btn .work {
+        width: 90%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_btn .git {
+        width: 90%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_main .main_img {
+        display: none;
+    }
+
+    /*SOBRE MIM */
+
+    .container_main_dois {
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
+    .main_about_img_dois {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_about_dois {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* HABILIDADES */
+
+    .container_habilidades {
+        width: 100%;
+        height: auto;
+    }
+
+    .habilidades_text {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .habilidades {
+        width: 100%;
+        height: auto;
+    }
+
+    .card_habilidade {
+        width: 150px;
+        height: 80px;
+    }
+
+    /* MAIN 2*/
+
+    .container_admin {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex;
+        flex-direction: column;
+    }
+
+    .admin_text {
+        width: 90%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .topicos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_admin_img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* PROJETOS */
+
+    .container_projetos {
+        width: 100%;
+    }
+
+    .projetos_text {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projetos {
+        width: 100%;
+    }
+
+    /* CONTATO */
+
+    .container_contato {
+        width: 100%;
+        height: auto;
+    }
+
+    .contato_text {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contatos {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contatos_card {
+        width: 80%;
+        height: 170px;
+    }
+
+    .contatos_tipos {
+        width: 90%;
+    }
+
+    /* OBRIGADO */
+
+    .container_obrigado {
+        width: 90%;
+        height: auto;
+    }
+
+    .obrigado_text {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* FOOTER */
+
+    .container_footer {
+        width: 90%;
+        height: auto;
+    }
+
+    
+}
+
+  
+
