@@ -395,7 +395,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, white, rgb(137, 137, 137), rgba(0, 0, 0, 0));
+    background: linear-gradient(to left, white, white, rgba(0, 0, 0, 0));
     pointer-events: none;
 }
 
@@ -902,6 +902,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        display: none;
     }
 
     /* PROJETOS */
@@ -950,6 +951,42 @@ footer {
 
     .contatos_tipos {
         width: 90%;
+        gap: 20px;
+    }
+
+    .card_contatos {
+        width: 100%;
+        height: 60px;
+        background-color: #161616;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .card_contatos h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(180, 180, 180);
+        margin-left: 20px;
+
+    }
+
+    .card_contatos p {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(193, 193, 193);
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .card_contatos a {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(193, 193, 193);
+        text-decoration: none;
+        margin-left: 20px;
     }
 
     /* OBRIGADO */
