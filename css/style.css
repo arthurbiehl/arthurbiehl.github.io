@@ -558,14 +558,15 @@ main {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     background-color: #282596;
     border-radius: 10px;
 }
 
 .contatos_card h2 {
-    font-size: 25px;
+    font-size: 22px;
+    width: 70%;
     font-weight: 600;
     color: white;
 }
