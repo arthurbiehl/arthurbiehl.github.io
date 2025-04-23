@@ -6,6 +6,10 @@
     font-family: 'PT Sans';
 }
 
+input:focus {
+    outline: none;
+}
+
 .linha {
     width: 100%;
     height: 1px;
@@ -87,20 +91,22 @@ main {
 
 @keyframes entrarDaEsquerda {
     from {
-      opacity: 0;
-      transform: translateX(-100px);
+        opacity: 0;
+        transform: translateX(-100px);
     }
+
     to {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
-  
-  main > * {
+}
+
+main>* {
     animation: entrarDaEsquerda 0.5s ease-out forwards;
-    opacity: 0; /* garante que o item está invisível antes da animação */
-  }
-  
+    opacity: 0;
+    /* garante que o item está invisível antes da animação */
+}
+
 
 .container_main {
     width: 1200px;
@@ -221,7 +227,7 @@ main {
     height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: start;
     gap: 10px;
 }
@@ -544,7 +550,6 @@ main {
 
 .contatos {
     width: 100%;
-    height: 250px;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -554,7 +559,7 @@ main {
 
 .contatos_card {
     width: 580px;
-    height: 200px;
+    height: 250px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -575,10 +580,22 @@ main {
     width: 100%;
     height: 30px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     color: white;
     font-size: 20px;
+}
+
+.text_contato_icones {
+    width: 200px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.text_contato_icones svg {
+    width: 32px;
+    
 }
 
 .contatos_tipos {
@@ -591,40 +608,83 @@ main {
     gap: 10px;
 }
 
-.card_contatos {
+.contatos_tipos_text {
     width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.contatos_tipos_text h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contatos_tipos_text i {
+    font-size: 15px;
+    color: #212121;
+}
+
+form {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
-    gap: 4px;
+    gap: 10px;
 }
 
-.card_contatos h3 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #212121;
+.campo {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.card_contatos p {
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.campo i {
+    font-size: 12px;
+    color: #a7a7a7;
+}
+
+.campo:focus-within i {
+    color: #333;
+}
+
+form button {
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #202020;
+    color: white;
     font-size: 14px;
-    font-weight: 400;
-    color: #212121;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.card_contatos a {
-    font-size: 14px;
-    font-weight: 400;
-    color: #212121;
-    text-decoration: none;
+form button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
 }
 
-.card_contatos i {
-    font-size: 11px;
-}
 
-.card_contatos a:hover {
-    text-decoration: underline;
-}
+
+
 
 /* obrigado */
 
@@ -675,6 +735,7 @@ main {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -773,7 +834,7 @@ footer {
         width: 30%;
         font-size: 20px;
     }
-    
+
     .container_header .links_header {
         width: 60%;
         gap: 15px;
@@ -967,12 +1028,23 @@ footer {
 
     .contatos_card {
         width: 80%;
-        height: 170px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contatos_card h2 {
+        display: none;
     }
 
     .contatos_tipos {
         width: 90%;
         gap: 20px;
+    }
+
+    form button {
+        width: 100%;
+        height: 30px;
     }
 
     .card_contatos {
@@ -1031,8 +1103,5 @@ footer {
         height: auto;
     }
 
-    
+
 }
-
-  
-
