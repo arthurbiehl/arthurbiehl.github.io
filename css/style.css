@@ -560,7 +560,7 @@ main>* {
 
 .contatos_card {
     width: 600px;
-    height: 400px;
+    height: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -575,14 +575,13 @@ main>* {
 
 .contatos_card h2 {
     font-size: 22px;
-    width: 70%;
     font-weight: 600;
     color: white;
 }
 
 .contatos_icones {
     width: 400px;
-    height: 40px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
