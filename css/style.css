@@ -681,7 +681,14 @@ form {
     color: #333;
 }
 
-form button {
+.email_btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email_btn button {
     width: 200px;
     height: 30px;
     border: none;
@@ -695,11 +702,15 @@ form button {
     transition: 0.5s;
 }
 
-form button:hover {
+.email_btn button:hover {
     background-color: white;
     border: 1px solid black;
     color: black;
 }
+
+
+
+
 
 
 
@@ -1018,11 +1029,22 @@ footer {
         gap: 20px;
     }
 
-    form button {
+    .email_btn button {
         width: 100%;
         height: 30px;
     }
 
+    .email_btn {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container_footer {
+        width: 90%;
+    }
 
 
 
