@@ -1030,15 +1030,12 @@ footer {
     }
 
     .email_btn button {
-        width: 100%;
+        width: 40%;
         height: 30px;
     }
 
     .email_btn {
         width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
 
