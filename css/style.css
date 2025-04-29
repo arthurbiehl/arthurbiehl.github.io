@@ -271,11 +271,12 @@ main>* {
 
 .container_habilidades {
     width: 1200px;
-    height: 230px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 .habilidades_text {
@@ -284,11 +285,19 @@ main>* {
     display: flex;
     justify-content: start;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .habilidades_text h2 {
     font-size: 23px;
     font-weight: 500;
+    color: #393939;
+}
+
+.habilidades_text p {
+    font-size: 14px;
+    font-weight: 400;
     color: #393939;
 }
 
@@ -309,7 +318,7 @@ main>* {
     justify-content: center;
     align-items: center;
     background-color: rgba(206, 206, 206, 0.418);
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .card_habilidade img {
@@ -440,6 +449,9 @@ main>* {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
 }
 
 .projetos_text {
@@ -447,7 +459,7 @@ main>* {
     height: 50px;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -521,9 +533,9 @@ main>* {
 
 .container_contato {
     width: 1200px;
-    height: auto;
+    height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -533,7 +545,7 @@ main>* {
     height: 50px;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -565,12 +577,12 @@ main>* {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border-radius: 10px;
 }
 
 .contatos_card img {
-    height: 260px;
-    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
 }
 
 .contatos_card h2 {
@@ -581,7 +593,7 @@ main>* {
 
 .contatos_icones {
     width: 400px;
-    height: 20px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -590,7 +602,6 @@ main>* {
 
 .text_contato_icones {
     width: 100%;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -622,7 +633,7 @@ main>* {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     gap: 10px;
 }
